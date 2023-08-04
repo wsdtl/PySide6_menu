@@ -1,8 +1,8 @@
 # xiaonan_PySise6_menu
 晓楠PySise6菜单控件
 # 展示
-![avatar](/home/test.png)
-# 使用
+![Cover](https://raw.githubusercontent.com/wsdtl/PySide6_menu/master/test.png)
+## 使用
 import sys
 from PySide6.QtWidgets import QLabel, QApplication
 from PySide6.QtGui import QPixmap
@@ -48,7 +48,6 @@ class Window(MainWindow):
         self.addWidget(Label3, "我是菜单3")
         self.addWidget(Label4, "我是菜单4")
         
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     windows = Window()

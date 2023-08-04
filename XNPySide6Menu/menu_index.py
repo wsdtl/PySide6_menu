@@ -32,7 +32,7 @@ from . import rc
 from .utils import change_theme_color
 
 if TYPE_CHECKING:
-    from mainsindow import MainWindow
+    from mainwindow import MainWindow
     
     
 class PushButton(QPushButton):

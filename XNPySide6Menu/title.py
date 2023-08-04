@@ -22,7 +22,7 @@ from .utils import change_theme_color
 from .menu_index import MenuLeftSideFirst
 
 if TYPE_CHECKING:
-    from mainsindow import MainWindow
+    from mainwindow import MainWindow
 
 
 class TitlePushButtonMax(QPushButton):

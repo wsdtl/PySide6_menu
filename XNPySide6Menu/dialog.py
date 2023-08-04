@@ -18,7 +18,7 @@ from PySide6.QtGui import (
 )
 
 if TYPE_CHECKING:
-    from mainsindow import MainWindow
+    from mainwindow import MainWindow
 
 from . import rc
 
