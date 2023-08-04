@@ -1,8 +1,7 @@
 # xiaonan_PySise6_menu
 晓楠PySise6菜单控件
 # 展示
-* window
-![window](https://raw.githubusercontent.com/wsdtl/PySide6_menu/tree/master/screenshot/test.png)
+![主界面](./screenshot/test.png)
 ## 使用
 ```python
 import sys
