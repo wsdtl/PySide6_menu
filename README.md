@@ -1,8 +1,10 @@
 # xiaonan_PySise6_menu
 晓楠PySise6菜单控件
 # 展示
-![Cover](https://raw.githubusercontent.com/wsdtl/PySide6_menu/master/test.png)
+* window
+![window](https://raw.githubusercontent.com/wsdtl/PySide6_menu/tree/master/screenshot/test.png)
 ## 使用
+```python
 import sys
 from PySide6.QtWidgets import QLabel, QApplication
 from PySide6.QtGui import QPixmap
@@ -53,5 +55,5 @@ if __name__ == '__main__':
     windows = Window()
     windows.show()
     sys.exit(app.exec())
-
+```
 
