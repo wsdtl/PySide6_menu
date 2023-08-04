@@ -2,7 +2,7 @@ import sys
 from PySide6.QtWidgets import QLabel, QApplication
 from PySide6.QtGui import QPixmap
 from XNPySide6Menu import MainWindow
-
+ 
 class Label1(QLabel):
     
     def __init__(self):

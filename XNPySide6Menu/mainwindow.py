@@ -36,12 +36,13 @@ class MainWindow(QMainWindow):
     添加子页面方法 - 按实例添加
         self.addWidgetInstance(QLabel(), "我是菜单2")
     """
+    _w = 1020
+    _h = 690
     _widget = dict()
     
     def __init__(self) -> None:
         super().__init__()
         self.setObjectName("MainWindow")
-        self._size = QSize(1020, 690)
         self.setStyleSheet(
             """QWidget#MainWindow
             {
@@ -85,8 +86,8 @@ class MainWindow(QMainWindow):
         """添加左侧菜单
 
         参数:
-            first_menu (str): 一级菜单名称
-            first_menu_img (QPixmap): 一级菜单图标
+            first_menu (str): 一级菜单名称\n
+            first_menu_img (QPixmap): 一级菜单图标\n
             second_menu (List[str]): 二级菜单名称
         """
         menu = MenuLeftSideFirst(first_menu, first_menu_img)
@@ -143,16 +144,16 @@ class MainWindow(QMainWindow):
         参数:
             pos (QPoint): 鼠标坐标
         """
-        self.resize(self._size)
+        self.showNormal()
         self.move(
-            pos.x() - self.width() // 2,
+            pos.x() - MainWindow._w // 2,
             pos.y() - MyTip._h // 2
         )
-    
+        
     def _move(self):
         """初始化居中
         """
-        self.resize(self._size)
+        self.resize(QSize(MainWindow._w, MainWindow._h))
         desktop = QApplication.instance().screens()[0].size()
         self.move((desktop.width() - self.width()) // 2, (desktop.height() - self.height()) // 2)
 
@@ -175,7 +176,7 @@ class MainWindow(QMainWindow):
         参数:
             text (str): 弹窗类容\n
             title (Optional[str], optional): 弹窗标题. Defaults to "".\n
-            flag (Optional[str], optional): 弹窗类型. Defaults to "success".\n
+            flag (Optional[str], optional): 弹窗类型. Defaults to "success".
         """
         DialogOver(self, text, title, flag)
             
